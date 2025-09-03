@@ -1,0 +1,51 @@
+body {
+  background-color: rosybrown;
+  color:darkslategrey;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color:rgb(120, 52, 28);
+  font-weight: 100;
+}
+
+section {
+  margin: 30px;  /*sections space */
+  padding: 25px;
+}
+
+h2 {
+  text-align:center;
+  font-size: 3em;
+  color:rgb(120, 52, 28);
+  font-weight: 100;
+}
+
+#About {
+  text-align: center;
+  background-color: lightpink;
+}
+
+#Experience {
+  background-color: plum;
+}
+
+#Experience ul {
+  list-style-type:none;
+  padding: 0;
+}
+
+#Connect {
+  background-color: lavender;
+}
+
+#Connect a {
+  color:cornflowerblue;
+}
+
+#Connect a:hover {
+  color:blue;
+  text-decoration: underline;
+}
