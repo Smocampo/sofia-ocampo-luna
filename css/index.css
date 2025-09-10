@@ -9,11 +9,15 @@ h1 {
   font-size: 3em;
   color:rgb(120, 52, 28);
   font-weight: 100;
+  text-decoration-line: underline;
+  color:rgb(120, 52, 28)
 }
 
 section {
   margin: 30px;  /*sections space */
   padding: 25px;
+  color:rgb(120, 52, 28)
+  
 }
 
 h2 {
@@ -21,24 +25,60 @@ h2 {
   font-size: 3em;
   color:rgb(120, 52, 28);
   font-weight: 100;
+  text-decoration-line: underline;
+  color:rgb(120, 52, 28)
 }
 
 #About {
   text-align: center;
   background-color: lightpink;
+
 }
 
 #Experience {
   background-color: plum;
+  border-color: black;
+  border-width: 3px;
+  border-style: dotted;
+  
 }
 
 #Experience ul {
-  list-style-type:none;
-  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  text-align: center;
+}
+
+#Skills {
+  background-color: indianred;
+  text-align: center;
+  font-size: 3em;
+  text-decoration-line: underline;
+  color:rgb(120, 52, 28);
+}
+
+#Projects {
+  background-color: olive;
+  text-align: center;
+  font-size: 3em;
+  text-decoration-line: underline;
+  color:rgb(120, 52, 28)
 }
 
 #Connect {
   background-color: lavender;
+  text-decoration-line: underline;
+  color:rgb(120, 52, 28)
+}
+
+#Connect ul{
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 #Connect a {
