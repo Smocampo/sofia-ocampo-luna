@@ -40,13 +40,11 @@ h2 {
   border-color: black;
   border-width: 3px;
   border-style: dotted;
-  
+  text-align: center;
+  display: flex;
 }
 
-#Experience ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+#work {
   gap: 12px;
   text-align: center;
 }
