@@ -1,12 +1,17 @@
+/* MOBILE SITE
+================= */
+
+
 body {
   background-color: rosybrown;
   color:darkslategrey;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
 }
 
 h1 {
   text-align: center;
-  font-size: 3em;
+  font-size: 1.5em;
   color:rgb(120, 52, 28);
   font-weight: 100;
   text-decoration-line: underline;
@@ -14,8 +19,8 @@ h1 {
 }
 
 section {
-  margin: 30px;  /*sections space */
-  padding: 25px;
+  margin: 1.75rem;  /*sections space */
+  padding: 1.5rem;
   color:rgb(120, 52, 28)
   
 }
@@ -29,6 +34,20 @@ h2 {
   color:rgb(120, 52, 28)
 }
 
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: .5rem; 
+}
+
+header nav li{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem ;
+}
+
 #About {
   text-align: center;
   background-color: lightpink;
@@ -38,14 +57,14 @@ h2 {
 #Experience {
   background-color: plum;
   border-color: black;
-  border-width: 3px;
+  border-width: .175rem;
   border-style: dotted;
   text-align: center;
   display: flex;
 }
 
 #work {
-  gap: 12px;
+  gap: .75rem;
   text-align: center;
 }
 
@@ -57,6 +76,9 @@ h2 {
   color:rgb(120, 52, 28);
 }
 
+/* PROJECTS SECTION
+======================== */
+
 #Projects {
   background-color: olive;
   text-align: center;
@@ -65,18 +87,22 @@ h2 {
   color:rgb(120, 52, 28)
 }
 
+/* CONNECT SECTION
+==================== */
+
 #Connect {
   background-color: lavender;
   text-decoration-line: underline;
+  display: inline-block
   color:rgb(120, 52, 28)
 }
 
 #Connect ul{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .75rem;
+  padding: 0;
   list-style: none;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
 }
 
 #Connect a {
@@ -86,4 +112,38 @@ h2 {
 #Connect a:hover {
   color:blue;
   text-decoration: underline;
+}
+
+
+
+/* TABLET
+================= */
+@media (min-width: 768px) {
+  h1{
+    font-size: 2.5em;
+    margin-top: 2rem;
+  }
+  .header{
+    gap: 2rem;
+  }
+/* 2 equal columns */
+  .connect ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5 rem;
+    justify-content: center;
+  }
+}
+
+/* DESKTOP
+===================== */
+@media (min-width: 1024px){
+  h1{
+    font-size: 3.5em;
+    margin-top: 3rem;
+  }
+   .connect ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5 rem;
+    justify-content: center;
+  }
 }
