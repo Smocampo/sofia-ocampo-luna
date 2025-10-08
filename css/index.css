@@ -26,21 +26,29 @@ section {
 }
 
 h2 {
-  text-align:center;
+  text-align: center;
   font-size: 3em;
   color:rgb(120, 52, 28);
   font-weight: 100;
-  text-decoration-line: underline;
   color:rgb(120, 52, 28)
 }
 
-.header-container{
+/* Header and Navigation=============== */
+
+header {
+  position: sticky;
+  top = 0;
+  background-color: lightslategray;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+header nav ul{
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  list-style-type: none;
+  justify-content: center;
+  gap: 1.25rem;
+  list-style: none;
   margin: 0;
-  padding: .5rem; 
+  padding: 1rem;
 }
 
 header nav li{
@@ -48,33 +56,60 @@ header nav li{
   padding-right: 0.25rem ;
 }
 
+header nav a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+
+
+/* About Section=============== */
 #About {
   text-align: center;
   background-color: lightpink;
 
 }
 
+
+/* Experience Section================ */
 #Experience {
   background-color: plum;
   border-color: black;
   border-width: .175rem;
   border-style: dotted;
-  text-align: center;
   display: flex;
+  justify-content: center;
 }
+
+/*  Work Section===================*/
 
 #work {
   gap: .75rem;
   text-align: center;
 }
+/* Skills section */
 
 #Skills {
   background-color: indianred;
-  text-align: center;
-  font-size: 3em;
-  text-decoration-line: underline;
+  font-size: 1em;
   color:rgb(120, 52, 28);
 }
+
+#Skills ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+#Skills li{
+  font-size: medium;
+  padding: 0.5rem 1rem;
+}
+
 
 /* PROJECTS SECTION
 ======================== */
@@ -82,8 +117,7 @@ header nav li{
 #Projects {
   background-color: olive;
   text-align: center;
-  font-size: 3em;
-  text-decoration-line: underline;
+  font-size: 1em;
   color:rgb(120, 52, 28)
 }
 
@@ -92,7 +126,6 @@ header nav li{
 
 #Connect {
   background-color: lavender;
-  text-decoration-line: underline;
   display: inline-block
   color:rgb(120, 52, 28)
 }
